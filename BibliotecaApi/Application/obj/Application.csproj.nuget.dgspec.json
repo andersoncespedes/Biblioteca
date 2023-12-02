@@ -29,8 +29,8 @@
               "C:\\Users\\APOLT02\\Desktop\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\Users\\APOLT02\\Desktop\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj"
               },
-              "c:\\Users\\APOLT02\\Desktop\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj": {
-                "projectPath": "c:\\Users\\APOLT02\\Desktop\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj"
+              "C:\\Users\\APOLT02\\Desktop\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\APOLT02\\Desktop\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -117,14 +117,14 @@
         }
       }
     },
-    "c:\\Users\\APOLT02\\Desktop\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\APOLT02\\Desktop\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\APOLT02\\Desktop\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\APOLT02\\Desktop\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "c:\\Users\\APOLT02\\Desktop\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\APOLT02\\Desktop\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\APOLT02\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\APOLT02\\Desktop\\Biblioteca\\BibliotecaApi\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\APOLT02\\Desktop\\Biblioteca\\BibliotecaApi\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\APOLT02\\AppData\\Roaming\\NuGet\\NuGet.Config"
