@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\APT02-63\\.nuget\\packages\\": {}
+    "C:\\Users\\APOLT02\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\APOLT02\\Desktop\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\APT02-63\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Domain\\obj\\",
+      "projectPath": "C:\\Users\\APOLT02\\Desktop\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\APOLT02\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\APOLT02\\Desktop\\Biblioteca\\BibliotecaApi\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\APT02-63\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\APOLT02\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
