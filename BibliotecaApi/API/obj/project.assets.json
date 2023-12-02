@@ -1776,19 +1776,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\APOLT02\\.nuget\\packages\\": {}
+    "C:\\Users\\APT02-63\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\APOLT02\\Desktop\\Biblioteca\\BibliotecaApi\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\APOLT02\\Desktop\\Biblioteca\\BibliotecaApi\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\APOLT02\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\APOLT02\\Desktop\\Biblioteca\\BibliotecaApi\\API\\obj\\",
+      "projectPath": "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\APT02-63\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\APOLT02\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\APT02-63\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -1800,8 +1800,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\APOLT02\\Desktop\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\APOLT02\\Desktop\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj"
+            "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj"
             }
           }
         }

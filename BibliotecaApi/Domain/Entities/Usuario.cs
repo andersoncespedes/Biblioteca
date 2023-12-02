@@ -16,4 +16,8 @@ namespace Domain.Entities;
         public int IdCiudadFk {get; set;}
         public Ciudad Ciudad {get; set;}
         public string Direccion {get; set;}
+        public ICollection<Prestamo> Prestamos {get; set;}
+        public ICollection<Rol> Roles {get; set;}
+        public ICollection<UsuarioRol> UsuarioRoles {get; set;}
+        public ICollection<RefreshToken> RefreshTokens { get; set;}
     }

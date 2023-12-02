@@ -22,5 +22,24 @@ public class AuthorConfiguration : IEntityTypeConfiguration<Author>
         .IsRequired()
         .HasMaxLength(40)
         .HasColumnName("apellido");
+
+        builder.Property(e => e.Nacimiento)
+        .HasColumnName("nacimiento")
+        .IsRequired()
+        .HasColumnType("date");
+
+        builder.Property(e => e.Email)
+        .HasColumnName("email")
+        .IsRequired()
+        .HasMaxLength(60);
+
+        builder.Property(e => e.AcercaDe)
+        .HasColumnName("acerca_de")
+        .IsRequired()
+        .HasColumnType("text");
+
+        builder.HasOne(e => e.Pais)
+        .WithMany(e => e.Authores)
+        .HasForeignKey(e => e.IdPais);
     }
 }
