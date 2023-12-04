@@ -28,11 +28,14 @@ namespace Persistence.Data.configurations;
            .HasMaxLength(255)
            .IsRequired();
 
-            builder.Property(p => p.PassName)
+            builder.Property(p => p.Email)
             .HasColumnName("email")
-            .HasColumnType("varchar")
-            .HasMaxLength(100)
+            .HasMaxLength(40)
             .IsRequired();
+
+            builder.HasOne(e => e.Ciudad)
+            .WithMany(e => e.Usuarios)
+            .HasForeignKey(e => e.IdCiudadFk);
 
             builder
            .HasMany(p => p.Roles)
@@ -60,10 +63,6 @@ namespace Persistence.Data.configurations;
             builder.HasMany(p => p.RefreshTokens)
             .WithOne(p => p.User)
             .HasForeignKey(p => p.UserId);
-
-            builder.HasData(
-                new Usuario { Id = 1, UserName = "Julian" , PassName = "AQAAAAIAAYagAAAAEKy7eDL9kR5DnZeJjwgco1cVJjlU0ExskyNJoN8vHBvzMrhlYNKQ1F+ff2M/FTiE7A=="}
-            );
         }
 
     }

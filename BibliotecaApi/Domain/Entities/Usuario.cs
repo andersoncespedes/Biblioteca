@@ -8,6 +8,7 @@ namespace Domain.Entities;
     {
         public string UserName {get; set;}
         public string PassName {get; set;}
+        public string Email {get; set;}
         public string Nombre {get; set;}
         public string Apellido {get; set;}
         public int IdTipoDocumento {get; set;}

@@ -1,33 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\API\\API.csproj": {}
+    "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\API\\API.csproj": {
+    "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\APT02-63\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\API\\obj\\",
+        "projectPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\APT02-63\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ander\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files\\dotnet\\sdk\\7.0.311\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj"
+              "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj"
               }
             }
           }
@@ -57,6 +58,12 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
@@ -90,21 +97,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.311\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj": {
+    "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\APT02-63\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Application\\obj\\",
+        "projectPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\APT02-63\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ander\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -116,11 +123,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj"
+              "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj"
+              "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -150,21 +157,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.311\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj": {
+    "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\APT02-63\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\APT02-63\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ander\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -203,21 +210,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.311\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj",
-        "packagesPath": "C:\\Users\\APT02-63\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Persistence\\obj\\",
+        "projectPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\APT02-63\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ander\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -229,8 +236,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\APT02-63\\Desktop\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj"
+              "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj"
               }
             }
           }
@@ -266,7 +273,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.311\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -8,15 +8,12 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Persistence.Data.configurations
 {
-    public class UserRolConfiguration : IEntityTypeConfiguration<UserRol>
+    public class UserRolConfiguration : IEntityTypeConfiguration<UsuarioRol>
     {
-        public void Configure(EntityTypeBuilder<UserRol> builder){
+        public void Configure(EntityTypeBuilder<UsuarioRol> builder){
     
             builder.ToTable("UserRol");
     
-            builder.HasData(
-                new UserRol {IdRol = 2, IdUser = 1}
-            );
     
         }
     }
