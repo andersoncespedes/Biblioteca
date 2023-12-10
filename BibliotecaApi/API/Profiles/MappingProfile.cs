@@ -15,5 +15,8 @@ public class MappingProfile : Profile
         CreateMap<Genero, GeneroDto>().ReverseMap();
         CreateMap<LibroDto, Libro>()
         .ReverseMap();
+        CreateMap<Libro, LibroDatDto>()
+        .ForMember(e => e.Generos, dest => dest.MapFrom(f => f.Generos.Select(e => e.Descripcion)))
+        .ReverseMap();
     }
 }

@@ -29,4 +29,10 @@ public class LibroRepository : GenericRepository<Libro>, ILibro
         _context.Libros.Add(entity);
         await trans.CommitAsync();
     }
+    public override Task<Libro> GetById(int id)
+    {
+        return _context.Libros
+        .Include(e => e.Generos)
+        .FirstAsync(e => e.Id == id);
+    }
 }

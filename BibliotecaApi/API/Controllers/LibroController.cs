@@ -20,7 +20,7 @@ public class LibroController : BaseApiController
         _mapper = map;
     }
     [HttpPost("AddLibro")]
-    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<LibroDto>> AddBook(LibroDto libro){
         Libro entity = _mapper.Map<Libro>(libro);
@@ -28,5 +28,20 @@ public class LibroController : BaseApiController
         await _unitOfWork.SaveAsync();
         return libro;
     }
+    [HttpGet("{id}")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<ActionResult<LibroDatDto>> GetById(int id){
+        Libro libro = await _unitOfWork.Libros.GetById(id);
+        return _mapper.Map<LibroDatDto>(libro);
+    }
+    [HttpGet]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<ActionResult<IEnumerable<LibroDatDto>>> GetAll(){
+        IEnumerable<Libro> libro = await _unitOfWork.Libros.GetAll();
+        return _mapper.Map<List<LibroDatDto>>(libro);
+    }
+
 
 }
