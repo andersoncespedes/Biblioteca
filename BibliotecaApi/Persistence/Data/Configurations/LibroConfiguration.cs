@@ -39,7 +39,9 @@ public class LibroConfiguration : IEntityTypeConfiguration<Libro>
         builder.HasOne(e => e.Editorial)
         .WithMany(e => e.Libros)
         .HasForeignKey(e => e.IdEditorial);
-
+        builder.HasOne(e => e.Author)
+        .WithMany(e => e.Libros)
+        .HasForeignKey(e => e.IdAutor);
         builder.HasMany(e => e.Generos)
         .WithMany(e => e.Libros)
         .UsingEntity<LibroGenero>(

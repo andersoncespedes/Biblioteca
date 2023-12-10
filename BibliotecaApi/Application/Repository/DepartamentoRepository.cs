@@ -2,13 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Domain.Entities;
+using Domain.Interface;
+using Persistence.Data;
 
-namespace Application.Repository
+namespace Application.Repository;
+public class DepartamentoRepository : GenericRepository<Departamento>, IDepartamento
 {
-    public class DepartamentoRepository
+    private readonly APIContext _context;
+    public DepartamentoRepository(APIContext context) : base(context)
     {
-        
-
-        
+        _context = context;
     }
 }

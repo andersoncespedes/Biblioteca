@@ -224,9 +224,6 @@ namespace Persistence.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int?>("AuthorId")
-                        .HasColumnType("int");
-
                     b.Property<int>("Cantidad")
                         .HasColumnType("int")
                         .HasColumnName("cantidad");
@@ -258,7 +255,7 @@ namespace Persistence.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AuthorId");
+                    b.HasIndex("IdAutor");
 
                     b.HasIndex("IdEditorial");
 
@@ -395,38 +392,17 @@ namespace Persistence.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("Apellido")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Direccion")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Documento")
-                        .HasColumnType("longtext");
-
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasMaxLength(40)
                         .HasColumnType("varchar(40)")
                         .HasColumnName("email");
 
-                    b.Property<int>("IdCiudadFk")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdTipoDocumento")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Nombre")
-                        .HasColumnType("longtext");
-
                     b.Property<string>("PassName")
                         .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("varchar")
                         .HasColumnName("password");
-
-                    b.Property<int?>("TipoDocumentoId")
-                        .HasColumnType("int");
 
                     b.Property<string>("UserName")
                         .IsRequired()
@@ -435,10 +411,6 @@ namespace Persistence.Data.Migrations
                         .HasColumnName("username");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("IdCiudadFk");
-
-                    b.HasIndex("TipoDocumentoId");
 
                     b.ToTable("user", (string)null);
                 });
@@ -524,8 +496,10 @@ namespace Persistence.Data.Migrations
             modelBuilder.Entity("Domain.Entities.Libro", b =>
                 {
                     b.HasOne("Domain.Entities.Author", "Author")
-                        .WithMany()
-                        .HasForeignKey("AuthorId");
+                        .WithMany("Libros")
+                        .HasForeignKey("IdAutor")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Domain.Entities.Editorial", "Editorial")
                         .WithMany("Libros")
@@ -603,23 +577,6 @@ namespace Persistence.Data.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Domain.Entities.Usuario", b =>
-                {
-                    b.HasOne("Domain.Entities.Ciudad", "Ciudad")
-                        .WithMany("Usuarios")
-                        .HasForeignKey("IdCiudadFk")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Domain.Entities.TipoDocumento", "TipoDocumento")
-                        .WithMany("Usuarios")
-                        .HasForeignKey("TipoDocumentoId");
-
-                    b.Navigation("Ciudad");
-
-                    b.Navigation("TipoDocumento");
-                });
-
             modelBuilder.Entity("Domain.Entities.UsuarioRol", b =>
                 {
                     b.HasOne("Domain.Entities.Rol", "Rol")
@@ -639,13 +596,16 @@ namespace Persistence.Data.Migrations
                     b.Navigation("Usuario");
                 });
 
+            modelBuilder.Entity("Domain.Entities.Author", b =>
+                {
+                    b.Navigation("Libros");
+                });
+
             modelBuilder.Entity("Domain.Entities.Ciudad", b =>
                 {
                     b.Navigation("Clientes");
 
                     b.Navigation("Editoriales");
-
-                    b.Navigation("Usuarios");
                 });
 
             modelBuilder.Entity("Domain.Entities.Cliente", b =>
@@ -695,8 +655,6 @@ namespace Persistence.Data.Migrations
             modelBuilder.Entity("Domain.Entities.TipoDocumento", b =>
                 {
                     b.Navigation("Clientes");
-
-                    b.Navigation("Usuarios");
                 });
 
             modelBuilder.Entity("Domain.Entities.Usuario", b =>

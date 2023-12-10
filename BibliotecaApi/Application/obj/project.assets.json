@@ -709,11 +709,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj",
+      "projectPath": "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\obj\\",
+      "outputPath": "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ander\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -728,11 +728,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj"
+            "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj": {
-              "projectPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj"
+            "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj"
             }
           }
         }

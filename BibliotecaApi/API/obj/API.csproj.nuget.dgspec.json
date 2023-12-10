@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\API\\API.csproj": {}
+    "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\API\\API.csproj": {
+    "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\API\\API.csproj",
+        "projectPath": "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\API\\API.csproj",
         "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\API\\obj\\",
+        "outputPath": "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ander\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -27,8 +27,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj"
+              "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj"
               }
             }
           }
@@ -43,6 +43,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AspNetCoreRateLimit": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "AutoMapper": {
               "target": "Package",
               "version": "[12.0.1, )"
@@ -54,6 +58,18 @@
             "JWT": {
               "target": "Package",
               "version": "[10.1.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[5.1.0, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
@@ -68,6 +84,10 @@
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -101,14 +121,14 @@
         }
       }
     },
-    "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj": {
+    "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\obj\\",
+        "outputPath": "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ander\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -123,11 +143,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj"
+              "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj"
+              "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -161,14 +181,14 @@
         }
       }
     },
-    "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj": {
+    "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ander\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -214,14 +234,14 @@
         }
       }
     },
-    "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ander\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -236,8 +256,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj"
+              "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Domain\\Domain.csproj"
               }
             }
           }

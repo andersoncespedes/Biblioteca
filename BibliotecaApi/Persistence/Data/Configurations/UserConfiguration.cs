@@ -32,11 +32,6 @@ namespace Persistence.Data.configurations;
             .HasColumnName("email")
             .HasMaxLength(40)
             .IsRequired();
-
-            builder.HasOne(e => e.Ciudad)
-            .WithMany(e => e.Usuarios)
-            .HasForeignKey(e => e.IdCiudadFk);
-
             builder
            .HasMany(p => p.Roles)
            .WithMany(r => r.Usuarios)

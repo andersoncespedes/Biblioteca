@@ -8,5 +8,4 @@ namespace Domain.Entities;
     {
         public string Descripcion {get; set;}
         public ICollection<Cliente> Clientes {get; set;}
-        public ICollection<Usuario> Usuarios {get; set;}
     }

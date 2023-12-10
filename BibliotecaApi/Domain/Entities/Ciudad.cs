@@ -11,5 +11,4 @@ public class Ciudad : BaseEntity
     public Departamento Departamento { get; set; }
     public ICollection<Cliente> Clientes { get; set; }
     public ICollection<Editorial> Editoriales{ get; set; }
-    public ICollection<Usuario> Usuarios { get; set; }
 }

@@ -9,16 +9,8 @@ namespace Domain.Entities;
         public string UserName {get; set;}
         public string PassName {get; set;}
         public string Email {get; set;}
-        public string Nombre {get; set;}
-        public string Apellido {get; set;}
-        public int IdTipoDocumento {get; set;}
-        public TipoDocumento TipoDocumento {get; set;}
-        public string Documento {get; set;}
-        public int IdCiudadFk {get; set;}
-        public Ciudad Ciudad {get; set;}
-        public string Direccion {get; set;}
-        public ICollection<Prestamo> Prestamos {get; set;}
-        public ICollection<Rol> Roles {get; set;}
+        public ICollection<Prestamo>  Prestamos {get; set;} = new HashSet<Prestamo>();
+        public ICollection<Rol> Roles {get; set;} = new HashSet<Rol>();
         public ICollection<UsuarioRol> UsuarioRoles {get; set;}
         public ICollection<RefreshToken> RefreshTokens { get; set;}
     }

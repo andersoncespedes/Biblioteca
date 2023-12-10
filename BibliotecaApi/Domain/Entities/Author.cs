@@ -13,4 +13,5 @@ public class Author : BaseEntity
     public string AcercaDe {get; set;}
     public int IdPais {get; set;}
     public Pais Pais {get; set;}
+    public ICollection<Libro> Libros {get; set;}
 }

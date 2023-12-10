@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SzyHC0nrqVQYZLct/CA4RHuOKT2Wqgb9lEKDfFDKiQDwk2cDrsALPD6g7ojxiE0Fo8Z47rFvzW7AouIr61tUKg==",
+  "dgSpecHash": "Mg4Xvsoa4AZz+u8D1IhaZHM2xbnd1EcTLczvtg1xm7iI25b+IxwXqQuEJsNkH7KnEaADEc+fsrUI1NZhtrBEAw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ander\\Documents\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\ander\\OneDrive\\Documentos\\Proyectos C#\\Biblioteca\\BibliotecaApi\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ander\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.2\\microsoft.entityframeworkcore.7.0.2.nupkg.sha512",
     "C:\\Users\\ander\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.2\\microsoft.entityframeworkcore.abstractions.7.0.2.nupkg.sha512",
