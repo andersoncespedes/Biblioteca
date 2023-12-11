@@ -2,6 +2,7 @@ using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Persistence.Data;
 using API.Extensions;
+using AspNetCoreRateLimit;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -34,6 +35,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseCors("CorsPolicy");
+app.UseIpRateLimiting();
 app.UseAuthorization();
 
 app.MapControllers();

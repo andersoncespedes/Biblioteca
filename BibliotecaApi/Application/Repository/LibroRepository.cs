@@ -19,20 +19,16 @@ public class LibroRepository : GenericRepository<Libro>, ILibro
     {
         using var trans = _context.Database.BeginTransaction();
         List<Genero> gen = new();
-        foreach(Genero x in entity.Generos.ToList()){
+        foreach (Genero x in entity.Generos.ToList())
+        {
             var ger = _context.Generos.Find(x.Id);
-            if(ger != null){
+            if (ger != null)
+            {
                 entity.Generos.Remove(x);
                 entity.Generos.Add(ger);
             }
         }
         _context.Libros.Add(entity);
         await trans.CommitAsync();
-    }
-    public override Task<Libro> GetById(int id)
-    {
-        return _context.Libros
-        .Include(e => e.Generos)
-        .FirstAsync(e => e.Id == id);
     }
 }
