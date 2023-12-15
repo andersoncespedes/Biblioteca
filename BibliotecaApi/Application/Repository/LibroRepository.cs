@@ -31,4 +31,13 @@ public class LibroRepository : GenericRepository<Libro>, ILibro
         _context.Libros.Add(entity);
         await trans.CommitAsync();
     }
+    public async Task AddPrestamo(IEnumerable<Prestamo> prestamos){
+        using var trans = _context.Database.BeginTransaction();
+        await _context.Prestamos.AddRangeAsync(prestamos);
+        foreach(int id in prestamos.Select(e => e.IdLibroFk)){
+            Libro libro = await _context.Libros.FindAsync(id);
+            libro.Cantidad -= 1;
+        }
+        await trans.CommitAsync();
+    }
 }

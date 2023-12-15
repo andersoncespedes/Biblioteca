@@ -32,7 +32,15 @@ public class LibroController : BaseApiController
         await _unitOfWork.SaveAsync();
         return libro;
     }
-    
+    [HttpPost("addPrestamo")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<ActionResult<IEnumerable<PrestamoDto>>> PrestarLibro(IEnumerable<PrestamoDto> prestamos){
+        IEnumerable<Prestamo> prestamo = _mapper.Map<List<Prestamo>>(prestamos);
+        await _unitOfWork.Libros.AddPrestamo(prestamo);
+        await _unitOfWork.SaveAsync();
+        return Ok(prestamos);
+    }
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]

@@ -24,5 +24,9 @@ public class MappingProfile : Profile
         .ReverseMap();
         CreateMap<Ciudad, CiudadDto>()
         .ReverseMap();
+        CreateMap<Cliente, ClienteDto>()
+        .ReverseMap();
+        CreateMap<Prestamo, PrestamoDto>()
+        .ReverseMap();
     }
 }

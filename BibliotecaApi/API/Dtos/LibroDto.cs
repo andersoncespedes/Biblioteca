@@ -11,10 +11,10 @@ public class LibroDto
     public DateOnly Publicacion { get; set; }
     public string Sinopsis { get; set; }
     public int Cantidad { get; set; }
-    public int IdAutor { get; set; }
+    public int ? IdAutor { get; set; }
     public AuthorDto ? Author { get; set; }
     public int IdEditorial { get; set; }
     public EditorialDto ? Editorial { get; set; }
     public int IdEstado { get; set; }
-    public ICollection<GeneroDto> Generos { get; set; }
+    public ICollection<GeneroDto> ? Generos { get; set; }
 }

@@ -8,11 +8,13 @@ using API.Helpers;
 namespace API.Controllers;
 [ApiVersion("1.1")]
 [ApiVersion("1.0")]
-public class CiudadController : BaseApiController
+
+
+public class ClienteController : BaseApiController
 {
     private readonly IUnitOfWork _unitOfWork;
     private IMapper _mapper;
-    public CiudadController(IUnitOfWork unitOfWork, IMapper mapper)
+    public ClienteController(IUnitOfWork unitOfWork, IMapper mapper)
     {
         _unitOfWork = unitOfWork;
         _mapper = mapper;
@@ -20,10 +22,10 @@ public class CiudadController : BaseApiController
     [HttpPost("Add")]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public async Task<ActionResult<CiudadDto>> Add(CiudadDto genero)
+    public async Task<ActionResult<ClienteDto>> Add(ClienteDto genero)
     {
-        Ciudad entity = _mapper.Map<Ciudad>(genero);
-        _unitOfWork.Ciudades.Add(entity);
+        Cliente entity = _mapper.Map<Cliente>(genero);
+        _unitOfWork.Clientes.Add(entity);
         await _unitOfWork.SaveAsync();
         return genero;
     }
@@ -31,40 +33,40 @@ public class CiudadController : BaseApiController
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public async Task<ActionResult<Pager<CiudadDto>>> Paginacion([FromQuery] Params Params)
+    public async Task<ActionResult<Pager<ClienteDto>>> Paginacion([FromQuery] Params Params)
     {
-        var labs = await _unitOfWork.Ciudades.Paginacion(Params.PageIndex, Params.PageSize, Params.Search);
-        var mapeo = _mapper.Map<List<CiudadDto>>(labs.registros);
-        return new Pager<CiudadDto>(mapeo, labs.totalRegistros, Params.PageIndex, Params.PageSize, Params.Search);
+        var labs = await _unitOfWork.Clientes.Paginacion(Params.PageIndex, Params.PageSize, Params.Search);
+        var mapeo = _mapper.Map<List<ClienteDto>>(labs.registros);
+        return new Pager<ClienteDto>(mapeo, labs.totalRegistros, Params.PageIndex, Params.PageSize, Params.Search);
     }
     [HttpGet("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public async Task<ActionResult<CiudadDto>> GetById(int id)
+    public async Task<ActionResult<ClienteDto>> GetById(int id)
     {
-        Ciudad genero = await _unitOfWork.Ciudades.GetById(id);
-        return _mapper.Map<CiudadDto>(genero);
+        Cliente genero = await _unitOfWork.Clientes.GetById(id);
+        return _mapper.Map<ClienteDto>(genero);
     }
     [MapToApiVersion("1.1")]
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public async Task<ActionResult<IEnumerable<CiudadDto>>> GetAll()
+    public async Task<ActionResult<IEnumerable<ClienteDto>>> GetAll()
     {
-        IEnumerable<Ciudad> generos = await _unitOfWork.Ciudades.GetAll();
-        return _mapper.Map<List<CiudadDto>>(generos);
+        IEnumerable<Cliente> generos = await _unitOfWork.Clientes.GetAll();
+        return _mapper.Map<List<ClienteDto>>(generos);
     }
     [HttpDelete("Delete/{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult> Delete(int id)
     {
-        Ciudad? genero = await _unitOfWork.Ciudades.GetById(id);
+        Cliente? genero = await _unitOfWork.Clientes.GetById(id);
         if (genero == null)
         {
             return BadRequest();
         }
-        _unitOfWork.Ciudades.Remove(genero);
+        _unitOfWork.Clientes.Remove(genero);
         await _unitOfWork.SaveAsync();
         return NoContent();
     }
