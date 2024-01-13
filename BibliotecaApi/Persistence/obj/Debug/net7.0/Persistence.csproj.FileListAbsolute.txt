@@ -28,3 +28,18 @@ C:\Users\ander\OneDrive\Documentos\Proyectos C#\Biblioteca\BibliotecaApi\Persist
 C:\Users\ander\OneDrive\Documentos\Proyectos C#\Biblioteca\BibliotecaApi\Persistence\obj\Debug\net7.0\refint\Persistence.dll
 C:\Users\ander\OneDrive\Documentos\Proyectos C#\Biblioteca\BibliotecaApi\Persistence\obj\Debug\net7.0\Persistence.pdb
 C:\Users\ander\OneDrive\Documentos\Proyectos C#\Biblioteca\BibliotecaApi\Persistence\obj\Debug\net7.0\ref\Persistence.dll
+C:\Users\Windows10\Documents\Anderson\Biblioteca\bibliotecaApi\Persistence\bin\Debug\net7.0\Persistence.deps.json
+C:\Users\Windows10\Documents\Anderson\Biblioteca\bibliotecaApi\Persistence\bin\Debug\net7.0\Persistence.dll
+C:\Users\Windows10\Documents\Anderson\Biblioteca\bibliotecaApi\Persistence\bin\Debug\net7.0\Persistence.pdb
+C:\Users\Windows10\Documents\Anderson\Biblioteca\bibliotecaApi\Persistence\bin\Debug\net7.0\Domain.dll
+C:\Users\Windows10\Documents\Anderson\Biblioteca\bibliotecaApi\Persistence\bin\Debug\net7.0\Domain.pdb
+C:\Users\Windows10\Documents\Anderson\Biblioteca\bibliotecaApi\Persistence\obj\Debug\net7.0\Persistence.csproj.AssemblyReference.cache
+C:\Users\Windows10\Documents\Anderson\Biblioteca\bibliotecaApi\Persistence\obj\Debug\net7.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Windows10\Documents\Anderson\Biblioteca\bibliotecaApi\Persistence\obj\Debug\net7.0\Persistence.AssemblyInfoInputs.cache
+C:\Users\Windows10\Documents\Anderson\Biblioteca\bibliotecaApi\Persistence\obj\Debug\net7.0\Persistence.AssemblyInfo.cs
+C:\Users\Windows10\Documents\Anderson\Biblioteca\bibliotecaApi\Persistence\obj\Debug\net7.0\Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Windows10\Documents\Anderson\Biblioteca\bibliotecaApi\Persistence\obj\Debug\net7.0\Persistence.csproj.CopyComplete
+C:\Users\Windows10\Documents\Anderson\Biblioteca\bibliotecaApi\Persistence\obj\Debug\net7.0\Persistence.dll
+C:\Users\Windows10\Documents\Anderson\Biblioteca\bibliotecaApi\Persistence\obj\Debug\net7.0\refint\Persistence.dll
+C:\Users\Windows10\Documents\Anderson\Biblioteca\bibliotecaApi\Persistence\obj\Debug\net7.0\Persistence.pdb
+C:\Users\Windows10\Documents\Anderson\Biblioteca\bibliotecaApi\Persistence\obj\Debug\net7.0\ref\Persistence.dll
